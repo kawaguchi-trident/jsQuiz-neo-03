@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KawaiiLab</title>
+</head>
+<body>
+    <h1>KAWAII LAB</h1>
+    <button id="fruits_zipper">FRUITS ZIPPER</button>
+    <button id="candy_tune">CANDY TUNE</button>
+    <button id="cutie_street">CUTIE STREET</button>
+
+    <h2>メンバー</h2>
+    <ul class="members"></ul>
+    <script>
+        const fruitsZipper = ["月足 天音", "鎮西 寿々歌", "櫻井 優衣", "仲川 瑠夏", "真中 まな", "松本 かれん", "早瀬 ノエル"
+        ];
+        const candyTune = ["福山 梨乃", "小川 奈々子", "村川 緋杏", "南 なつ", "立花 琴未", "宮野 静", "桐原 美月"];
+        const cutieStreet = ["古澤 里紗", "佐野 愛花", "板倉 可奈", "増田 彩乃", "川本 笑瑠", "梅田 みゆ", "真鍋 凪咲", "桜庭 遥花"]
+    </script>
+    <script>
+        const fzBtn = document.querySelector('#fruits_zipper');
+        const ctBtn = document.querySelector('#candy_tune');
+        const csBtn = document.querySelector('#cutie_street');
+
+        //<ul>の中身を削除してボタンの対象のグループメンバーを入れる。
+        const changeMember = function (team) {
+            const membersArea = document.querySelector('.members');
+            membersArea.innerHTML = "";
+            team.forEach(member => {
+                membersArea.innerHTML += `<li>${member}</li>`
+            });
+        }
+
+        //各ボタンを押すと表示されるようにする。
+        fzBtn.addEventListener('click', () => {
+            changeMember(fruitsZipper);
+        });
+        ctBtn.addEventListener('click', () => {
+            changeMember(candyTune);
+        });
+        csBtn.addEventListener('click', () => {
+            changeMember(cutieStreet);
+        });
+
+
+    </script>
+</body>
+</html>
