@@ -6,6 +6,8 @@
 
 3つのボタンを押したとき、それぞれのグループ（FRUITS ZIPPER / CANDY TUNE / CUTIE STREET）のメンバーを `<ul class="members">` の中に `<li>` で表示する JavaScript を書いてください。
 
+![Quiz3の課題](./quiz3.gif)
+
 ### HTML の構造（ひな形）
 
 - `#fruits_zipper` / `#candy_tune` / `#cutie_street` の3つのボタン
@@ -64,7 +66,7 @@ changeMember(team)
 
 ### ⑤ commit / push
 変更を commit して push してください。
-- title：出席番号 名前
+- title：出席番号_名前（例：28_河口）
 - message：提出します。
 
 ### ⑥ Pull Request を作成
