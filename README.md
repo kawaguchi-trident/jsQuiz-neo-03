@@ -6,7 +6,7 @@
 
 3つのボタンを押したとき、それぞれのグループ（FRUITS ZIPPER / CANDY TUNE / CUTIE STREET）のメンバーを `<ul class="members">` の中に `<li>` で表示する JavaScript を書いてください。
 
-![Quiz3の課題](./quiz3.gif)
+![Quiz3の課題](./sample.gif)
 
 ### HTML の構造（ひな形）
 
@@ -106,4 +106,4 @@ jsQuiz-neo-03/
 
 ## 模範解答
 
-授業資料の一番下に、リンクがあります。
+授業資料の[JSQuiz_neo模範解答](https://2026doc.hideok.org/first-term/javascript/post-quizanswer)
