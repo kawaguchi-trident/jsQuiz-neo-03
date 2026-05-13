@@ -11,6 +11,7 @@
     <button id="candy_tune">CANDY TUNE</button>
     <button id="cutie_street">CUTIE STREET</button>
 
+
     <h2>メンバー</h2>
     <ul class="members"></ul>
 
@@ -28,7 +29,34 @@
       //      - <ul class="members"> の中身を一度空にする
       //      - 引数 team（配列）の各メンバーを <li>メンバー名</li> として追加する
       //      - forEach を使うと書きやすい
-      //
+
+      const membersText=document.querySelector(".members");
+      const fruitsZipperButton=document.querySelector("#fruits_zipper");
+      const candyTuneButton=document.querySelector("#candy_tune");
+      const cutieStreetButton=document.querySelector("#cutie_street");
+      let member=0;
+
+
+      function changeMember(team){
+        membersText.textContent = "";
+        team.forEach((member) => {
+          membersText.textContent += `<li>${member}</li>`;
+        });
+        console.log(membersText.textContent);
+
+
+      };
+
+      fruitsZipperButton.addEventListener("click",()=>{
+        changeMember(fruitsZipper);
+      });
+      candyTuneButton.addEventListener("click",()=>{
+        changeMember(candyTune);
+      });
+      cutieStreetButton.addEventListener("click",()=>{
+        changeMember(cutieStreet);
+      });
+
       //   2. 3つのボタンに click イベントを設定する
       //      - #fruits_zipper  → changeMember(fruitsZipper)
       //      - #candy_tune     → changeMember(candyTune)
