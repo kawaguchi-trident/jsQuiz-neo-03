@@ -38,11 +38,11 @@
 
 
       function changeMember(team){
-        membersText.textContent = "";
+        membersText.innerHTML = "";
         team.forEach((member) => {
-          membersText.textContent += `<li>${member}</li>`;
+          membersText.innerHTML += `<li>${member}</li>`;
         });
-        console.log(membersText.textContent);
+        console.log(membersText.innerHTML);
 
 
       };
